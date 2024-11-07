@@ -61,9 +61,24 @@ int main() {
     string wildlife, areaTitle; 
 
     // Populating forest with file data 
-    while (filename >> forestArea >> wildlife) {
+    while (filename >> areaTitle >> wildlife) {
 
-        
+        if (species == "Tree") {
+
+            forestArea[areaTitle][0].push_back("Tree");
+        } else if (species == "Rabbit") {
+
+            forestArea[areaTitle][1].push_back("Rabbit"); 
+        } else if (species == "Predator") {
+
+            forestArea[areaTitle][2].push_back("Predator"); 
+        }
+    
     }
+
+    filename.close(); 
+
+    // Oversee population change for the next 10 time intervals 
+    populateChange(forestArea, 10); 
     
 }
