@@ -47,8 +47,6 @@ void populateChange(map<string,array<list<string>, 3>>& map, int time) {
     }
 }
 
-}; 
-
 // Main function that initializes data for software 
 int main() {
 
@@ -58,10 +56,10 @@ int main() {
     // External file reads key data
     fstream filename("forest_data.txt"); 
 
-    string wildlife, areaTitle; 
+    string species, areaTitle; 
 
     // Populating forest with file data 
-    while (filename >> areaTitle >> wildlife) {
+    while (filename >> areaTitle >> species) {
 
         if (species == "Tree") {
 
