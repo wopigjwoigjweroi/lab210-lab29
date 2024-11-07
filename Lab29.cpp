@@ -48,3 +48,22 @@ void populateChange(map<string,array<list<string>, 3>>& map, int time) {
 }
 
 }; 
+
+// Main function that initializes data for software 
+int main() {
+
+    // Map initializes parts of the forest 
+    map<string, array<list<string>, 3>> forestArea;
+
+    // External file reads key data
+    fstream filename("forest_data.txt"); 
+
+    string wildlife, areaTitle; 
+
+    // Populating forest with file data 
+    while (filename >> forestArea >> wildlife) {
+
+        
+    }
+    
+}
