@@ -78,5 +78,6 @@ int main() {
 
     // Oversee population change for the next 10 time intervals 
     populateChange(forestArea, 10); 
-    
+
+    return 0; 
 }
