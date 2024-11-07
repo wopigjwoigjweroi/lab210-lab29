@@ -56,6 +56,7 @@ int main() {
     // External file reads key data
     fstream filename("forest_data.txt"); 
 
+    // Two string variables that represent life in forest and name for area
     string species, areaTitle; 
 
     // Populating forest with file data 
@@ -74,6 +75,7 @@ int main() {
     
     }
 
+    // Close the data file 
     filename.close(); 
 
     // Oversee population change for the next 10 time intervals 
