@@ -61,7 +61,7 @@ int main() {
     
     forestArea["Empty"]; 
 
-    populateChange(forestArea, 0); 
+    populateChange(forestArea, 1); 
 
     cout << "Expecting no change, there isn't a population.\n"; 
 
@@ -85,7 +85,7 @@ int main() {
 
     forestArea["Full"][2].push_back(string("Rabbit")); 
 
-    populateChange(forestArea, 2); 
+    populateChange(forestArea, 1); 
 
     cout << "Expecting a flourishing forest.\n"; 
 
