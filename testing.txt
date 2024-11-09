@@ -1,0 +1,1 @@
+In the software, the populateChange() function serves as a way to keep track of changes in the forests population throughout each time interval. Test cases are created to see if environmental factors such as  Rabbits, Trees, and Predators interact differently with each other under different conditions. 

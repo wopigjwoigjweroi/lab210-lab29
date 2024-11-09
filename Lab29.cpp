@@ -1,3 +1,5 @@
+// COMSC-210 | Lab-28/30 | Jeremiah Ortiz 
+
 // Include header files
 #include <iostream>
 #include <map>
@@ -52,6 +54,40 @@ int main() {
 
     // Map initializes parts of the forest 
     map<string, array<list<string>, 3>> forestArea;
+
+    // Test 1: Empty Forest
+
+    cout << "Test 1: Empty Area\n"; 
+    
+    forestArea["Empty"]; 
+
+    populateChange(forestArea, 1); 
+
+    cout << "Expecting no change, there isn't a population.\n"; 
+
+    // Test 2: Tree Growth only 
+
+    cout << "Test 2: Forest Tree Growth.\n"; 
+
+    forestArea["Trees"][0].push_back(string("Tree")); 
+
+    populateChange(forestArea, 1); 
+
+    cout << "Expecting tree growth only.\n"; 
+
+    // Test 3: Fully occupied Forest
+
+    cout << "Test 3: Full Forest.\n"; 
+
+    forestArea["Full"][0].push_back(string("Tree")); 
+
+    forestArea["Full"][1].push_back(string("Predator")); 
+
+    forestArea["Full"][2].push_back(string("Rabbit")); 
+
+    populateChange(forestArea, 1); 
+
+    cout << "Expecting a flourishing forest.\n" << endl; 
 
     // External file reads key data
     fstream filename("forest_data.txt"); 
