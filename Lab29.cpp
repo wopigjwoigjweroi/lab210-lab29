@@ -1,11 +1,11 @@
+// COMSC-210 | Lab-28/30 | Jeremiah Ortiz 
+
 // Include header files
 #include <iostream>
 #include <map>
 #include <list>
 #include <array>
 #include <fstream>
-
-// Test
 
 using namespace std; 
 
@@ -54,6 +54,28 @@ int main() {
 
     // Map initializes parts of the forest 
     map<string, array<list<string>, 3>> forestArea;
+
+    // Test 1: Empty Forest
+
+    forestArea["Empty"]; 
+
+    cout << "Test 1: Empty Area\n"; 
+
+    populateChange(forestArea, 0); 
+
+    cout << "Expecting no change, there isn't a population.\n"; 
+
+    // Test 2: Tree Growth only 
+
+    forestArea["Trees"][0].push_back(string("Tree")); 
+
+    cout << "Test 2: Forest Tree Growth.\n"; 
+
+    populateChange(forestArea, 1); 
+
+    cout << "Expecting tree growth only.\n"; 
+
+    // Test 3: 
 
     // External file reads key data
     fstream filename("forest_data.txt"); 
