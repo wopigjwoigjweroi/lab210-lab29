@@ -57,9 +57,9 @@ int main() {
 
     // Test 1: Empty Forest
 
-    forestArea["Empty"]; 
-
     cout << "Test 1: Empty Area\n"; 
+    
+    forestArea["Empty"]; 
 
     populateChange(forestArea, 0); 
 
@@ -67,15 +67,27 @@ int main() {
 
     // Test 2: Tree Growth only 
 
-    forestArea["Trees"][0].push_back(string("Tree")); 
-
     cout << "Test 2: Forest Tree Growth.\n"; 
+
+    forestArea["Trees"][0].push_back(string("Tree")); 
 
     populateChange(forestArea, 1); 
 
     cout << "Expecting tree growth only.\n"; 
 
-    // Test 3: 
+    // Test 3: Fully occupied Forest
+
+    cout << "Test 3: Full Forest.\n"; 
+
+    forestArea["Full"][0].push_back(string("Tree")); 
+
+    forestArea["Full"][1].push_back(string("Predator")); 
+
+    forestArea["Full"][2].push_back(string("Rabbit")); 
+
+    populateChange(forestArea, 2); 
+
+    cout << "Expecting a flourishing forest.\n"; 
 
     // External file reads key data
     fstream filename("forest_data.txt"); 
