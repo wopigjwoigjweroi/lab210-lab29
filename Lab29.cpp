@@ -87,7 +87,7 @@ int main() {
 
     populateChange(forestArea, 1); 
 
-    cout << "Expecting a flourishing forest.\n"; 
+    cout << "Expecting a flourishing forest.\n" << endl; 
 
     // External file reads key data
     fstream filename("forest_data.txt"); 
