@@ -1,1 +1,3 @@
-
+Entry 1. Unclear/Messy Output, fixed by including more end lines
+Entry 2. Messy main function, fixed by creating a new function 
+Entry 3. 
