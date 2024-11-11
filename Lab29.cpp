@@ -19,7 +19,7 @@ void populateChange(map<string,array<list<string>, 3>>& map, int time) {
     // Iteration of time periods 
     for (int i = 0; i < time; ++i) {
 
-        cout << "Time Period: " << i + 1 << endl; 
+        cout << "\nTime Period: " << i + 1 << endl; 
         
     // Iteration of each area of the forest 
     for (auto& part : map) {
@@ -43,7 +43,9 @@ void populateChange(map<string,array<list<string>, 3>>& map, int time) {
             list[1].pop_front(); 
         }
 
-        cout << "Map: " << mapName << " , Trees: " << list[0].size() << ", Rabbit #: " << list[1].size() << ", Predator # " << list[2].size() << endl; 
+        cout << "Map: " << mapName << ", Trees: " << list[0].size() << ", Rabbit #: " << list[1].size() << ", Predator # " << list[2].size() << endl; 
+
+        cout << endl; 
         
     }
         
