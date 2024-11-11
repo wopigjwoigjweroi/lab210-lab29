@@ -6,4 +6,5 @@ Entry 5. Repeated/Inconsistent Naming, fixed by organizing program structure
 Entry 6. Repeated empty forest area test, fixed by initializing empty forest test with 0 
 Entry 7. Program didn't read "forest_data.txt", fixed by ensuring text file was in correct directory 
 Entry 8. Program had unclosed file, fixed by adding function to close text file 
-Entry 9. 
+Entry 9. Higher memory usage due to duplicates of maps, fixed by adding prototype functions
+Entry 10. 
