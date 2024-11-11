@@ -49,11 +49,9 @@ void populateChange(map<string,array<list<string>, 3>>& map, int time) {
     }
 }
 
-// Main function that initializes data for software 
-int main() {
+void forestTest() {
 
-    // Map initializes parts of the forest 
-    map<string, array<list<string>, 3>> forestArea;
+     map<string, array<list<string>, 3>> forestArea;
 
     // Test 1: Empty Forest
 
@@ -87,7 +85,17 @@ int main() {
 
     populateChange(forestArea, 1); 
 
-    cout << "Expecting a flourishing forest.\n" << endl; 
+    cout << "Expecting a flourishing forest.\n" << endl;
+
+}
+
+// Main function that initializes data for software 
+int main() {
+
+    forestTest(); 
+
+    // Map initializes parts of the forest 
+    map<string, array<list<string>, 3>> forestArea;
 
     // External file reads key data
     fstream filename("forest_data.txt"); 
