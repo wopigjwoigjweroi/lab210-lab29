@@ -7,4 +7,4 @@ Entry 6. Repeated empty forest area test, fixed by initializing empty forest tes
 Entry 7. Program didn't read "forest_data.txt", fixed by ensuring text file was in correct directory 
 Entry 8. Program had unclosed file, fixed by adding function to close text file 
 Entry 9. Higher memory usage due to duplicates of maps, fixed by adding prototype functions
-Entry 10. 
+Entry 10. Unnecessary whitespace in cout lines, fixed by adjusting the lines based on the output 
