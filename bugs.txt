@@ -1,3 +1,5 @@
 Entry 1. Unclear/Messy Output, fixed by including more end lines
 Entry 2. Messy main function, fixed by creating a new function 
-Entry 3. 
+Entry 3. Infinite loop error occured, fixed by ensuring for loop in first function ran on a fixed timeframe 
+Entry 4. Invalid conversion from const char* to string, fixed by adding string to push_back functions to main 
+Entry 5. 
