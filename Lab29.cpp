@@ -11,6 +11,7 @@ using namespace std;
 
 // Define function prototype 
 void populateChange(map<string,array<list<string>, 3>>& map, int time);
+void forestTest(); 
 
 // Define function for population change
 void populateChange(map<string,array<list<string>, 3>>& map, int time) {
@@ -18,7 +19,7 @@ void populateChange(map<string,array<list<string>, 3>>& map, int time) {
     // Iteration of time periods 
     for (int i = 0; i < time; ++i) {
 
-        cout << "Time Period: " << i + 1 << endl; 
+        cout << "\nTime Period: " << i + 1 << endl; 
         
     // Iteration of each area of the forest 
     for (auto& part : map) {
@@ -42,18 +43,18 @@ void populateChange(map<string,array<list<string>, 3>>& map, int time) {
             list[1].pop_front(); 
         }
 
-        cout << "Map: " << mapName << " , Trees: " << list[0].size() << ", Rabbit #: " << list[1].size() << ", Predator # " << list[2].size() << endl; 
+        cout << "Map: " << mapName << ", Trees: " << list[0].size() << ", Rabbit #: " << list[1].size() << ", Predator # " << list[2].size() << endl; 
+
+        cout << endl; 
         
     }
         
     }
 }
 
-// Main function that initializes data for software 
-int main() {
+void forestTest() {
 
-    // Map initializes parts of the forest 
-    map<string, array<list<string>, 3>> forestArea;
+     map<string, array<list<string>, 3>> forestArea;
 
     // Test 1: Empty Forest
 
@@ -87,7 +88,17 @@ int main() {
 
     populateChange(forestArea, 1); 
 
-    cout << "Expecting a flourishing forest.\n" << endl; 
+    cout << "Expecting a flourishing forest.\n" << endl;
+
+}
+
+// Main function that initializes data for software 
+int main() {
+
+    forestTest(); 
+
+    // Map initializes parts of the forest 
+    map<string, array<list<string>, 3>> forestArea;
 
     // External file reads key data
     fstream filename("forest_data.txt"); 
